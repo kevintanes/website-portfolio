@@ -27,6 +27,9 @@ Component installation goes through the shadcn CLI (`components.json` is already
 - **`cn` is the npm package `cn`, not a hand-rolled clsx+tailwind-merge helper.** `src/lib/utils.ts` just re-exports it: `export { cn } from "cn"`.
 - **shadcn config** (`components.json`): style `base-nova`, base color `neutral`, CSS variables on, no class prefix, icon library `lucide-react`, RSC enabled. Aliases map to `@/components`, `@/components/ui`, `@/lib`, `@/lib/utils`, `@/hooks`.
 - **Theming**: `src/app/globals.css` defines the whole design system as OKLCH CSS variables on `:root` and `.dark` (background, foreground, card, primary, border, chart colors, sidebar colors, radius scale), consumed by Tailwind v4 via `@theme inline`. Dark mode is a `.dark` class variant (`@custom-variant dark (&:is(.dark *))`), not `prefers-color-scheme`. Imports: `tailwindcss`, `tw-animate-css`, `shadcn/tailwind.css`.
+  - **Dark/light toggle** uses `next-themes`. `src/components/theme-provider.tsx` re-exports `ThemeProvider` from `next-themes`; it's mounted in `src/app/layout.tsx` wrapping `{children}` with `attribute="class"`, `defaultTheme="system"`, `enableSystem`, `disableTransitionOnChange` (and `<html>` has `suppressHydrationWarning`).
+  - The toggle component is `src/components/theme-toggle.tsx` (`ThemeToggle`) — reads/writes theme via the `useTheme()` hook (`resolvedTheme`, `setTheme`) from `next-themes`, and guards the pre-hydration render with `useSyncExternalStore` to avoid a mismatch (renders a disabled button until mounted).
+  - Convention: always go through `useTheme()` from `next-themes` to read or change the theme — never read/toggle the `.dark` class on `document.documentElement` manually.
 - **Fonts**: Geist Sans and Geist Mono, loaded via `next/font/google` in `src/app/layout.tsx`, exposed as `--font-geist-sans` / `--font-geist-mono` CSS variables on `<html>`.
 
 ## Design reference
