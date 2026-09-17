@@ -11,8 +11,16 @@ export const siteConfig = {
     alt: "Portrait of Kevin Tanes",
   },
   resumeUrl: "/cv.pdf",
+  bio: {
+    label: "01 / BIO",
+    heading: "The Philosophy",
+    body: [
+      "Full-stack web developer with hands-on experience across React, Next.js, Node.js, and TypeScript. I've led frontend architecture for a production marketing site — cutting load time by 35% — and built a multi-platform Learning Management System end-to-end, from data models to deployed UI.",
+      "Outside of client work, I keep building side projects like BookEase to stay sharp on the latest tooling: Prisma, TanStack Query, shadcn/ui, and modern App Router patterns.",
+    ],
+  },
   navLinks: [
-    { label: "01 / About", href: "#about" },
+    { label: "01 / Bio", href: "#bio" },
     { label: "02 / Stack", href: "#stack" },
     { label: "03 / Work", href: "#work" },
     { label: "04 / Contact", href: "#contact" },
