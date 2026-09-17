@@ -30,7 +30,12 @@ Component installation goes through the shadcn CLI (`components.json` is already
   - **Dark/light toggle** uses `next-themes`. `src/components/theme-provider.tsx` re-exports `ThemeProvider` from `next-themes`; it's mounted in `src/app/layout.tsx` wrapping `{children}` with `attribute="class"`, `defaultTheme="system"`, `enableSystem`, `disableTransitionOnChange` (and `<html>` has `suppressHydrationWarning`).
   - The toggle component is `src/components/theme-toggle.tsx` (`ThemeToggle`) — reads/writes theme via the `useTheme()` hook (`resolvedTheme`, `setTheme`) from `next-themes`, and guards the pre-hydration render with `useSyncExternalStore` to avoid a mismatch (renders a disabled button until mounted).
   - Convention: always go through `useTheme()` from `next-themes` to read or change the theme — never read/toggle the `.dark` class on `document.documentElement` manually.
+  - `--brand` token holds the orange accent color used for CTAs and highlights.
+  - `--font-sans` and `--font-mono` are now wired to the Geist font variables via `@theme inline`.
+  - `--background` and `--card` tokens are tuned to match the off-white palette from the design mockup.
 - **Fonts**: Geist Sans and Geist Mono, loaded via `next/font/google` in `src/app/layout.tsx`, exposed as `--font-geist-sans` / `--font-geist-mono` CSS variables on `<html>`.
+- **`src/lib/site-config.ts`** is the shared data source for nav links, social links, and identity data, used across sections. Read/update this data here — don't hardcode it in individual components.
+- **Navigation** uses anchor scroll (`#section-id`) to sections within the single page, not separate routing.
 
 ## Design reference
 
