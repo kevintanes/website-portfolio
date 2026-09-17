@@ -10,7 +10,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="#" className="font-mono text-sm font-medium">
+        <Link href="#hero" className="font-mono text-sm font-medium">
           <span className="text-brand">[{siteConfig.initials}]</span>{" "}
           {siteConfig.name}
         </Link>
