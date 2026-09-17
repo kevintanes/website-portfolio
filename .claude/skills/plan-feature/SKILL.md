@@ -79,7 +79,14 @@ alih-alih menebak.
   sungguhan — itu cuma didaftar di plan).
 - JANGAN mengubah `CLAUDE.md` di tahap ini, walau plan menyimpulkan ada convention baru.
 
-## 8. Output format
+## 8. Tentukan nomor tiket
+
+Sebelum menyusun title, cari nomor tiket berikutnya: jalankan
+`gh issue list --search "[WP-" --state all --limit 100` (atau setara) dan cari nomor `WP-<n>`
+tertinggi yang sudah dipakai di title issue manapun. Nomor tiket untuk fitur ini adalah
+nomor tertinggi + 1. Kalau tidak ada tiket `WP-` sama sekali, mulai dari `WP-1`.
+
+## 9. Output format
 
 Output akhir harus siap dipakai langsung sebagai GitHub issue, contoh:
 

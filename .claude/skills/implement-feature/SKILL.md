@@ -33,6 +33,12 @@ Implementasikan setiap item checklist di issue, ikuti convention di `CLAUDE.md` 
 nemu hal yang kelihatannya perlu dikerjakan tapi tidak ada di checklist, catat saja untuk
 disebutkan nanti di ringkasan (step 6), jangan langsung dikerjakan.
 
+**Sumber kebenaran desain:** kalau user memberikan link frame Figma di prompt (atau ada di
+issue), pakai itu sebagai referensi utama — ambil spacing, warna, layout, dan variabel lewat
+Figma MCP (`get_design_context` dkk), jangan menebak dari gambar. `design-reference/` PNG
+cuma dipakai sebagai fallback kalau tidak ada link Figma yang diberikan untuk section
+terkait. Kalau ada perbedaan antara PNG dan data Figma live, ikuti data Figma.
+
 ## 4. Lint dan build
 
 Jalankan `npm run lint` lalu `npm run build`. Kalau ada error dari salah satu, perbaiki dulu
