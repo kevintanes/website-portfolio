@@ -1,0 +1,54 @@
+"use client";
+
+import * as React from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+
+import { Button, buttonVariants } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { siteConfig } from "@/lib/site-config";
+
+export function MobileNav() {
+  const [open, setOpen] = React.useState(false);
+
+  return (
+    <div className="md:hidden">
+      <Button
+        variant="outline"
+        size="icon"
+        aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
+        onClick={() => setOpen((prev) => !prev)}
+      >
+        {open ? <X className="h-[1.2rem] w-[1.2rem]" /> : <Menu className="h-[1.2rem] w-[1.2rem]" />}
+      </Button>
+
+      {open && (
+        <div className="absolute inset-x-0 top-full border-b border-border bg-background px-6 py-4">
+          <nav className="flex flex-col gap-4 font-mono text-sm">
+            {siteConfig.navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="mt-4 flex items-center gap-3">
+            <ThemeToggle />
+            <Link
+              href={siteConfig.navLinks.at(-1)!.href}
+              onClick={() => setOpen(false)}
+              className={buttonVariants({ variant: "default" })}
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
