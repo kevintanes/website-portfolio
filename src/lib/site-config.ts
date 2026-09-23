@@ -33,11 +33,45 @@ export const siteConfig = {
       "shadcn/ui",
     ],
   },
+  projects: {
+    label: "03 / CASE STUDIES",
+    heading: "Featured Projects",
+    items: [
+      {
+        title: "BookEase",
+        description:
+          "Full-stack service booking platform — end-to-end booking flow with slot selection, booking summary, and Xendit payment integration.",
+        image: "/projects/bookease.png",
+        tags: [
+          "React",
+          "TypeScript",
+          "Vite",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "Express.js",
+          "Prisma",
+          "MySQL",
+        ],
+        liveUrl: "https://bookease-kevintanes.vercel.app/",
+        githubUrl: "https://github.com/kevintanes/booking-ease-frontend",
+      },
+      {
+        title: "Sales Management System",
+        description:
+          "Sales management dashboard with custom JWT auth and Server/Client Component architecture per Next.js App Router.",
+        image: "/projects/sales-management.png",
+        tags: ["Next.js 16", "TypeScript", "shadcn/ui", "Supabase", "Prisma"],
+        liveUrl: null,
+        githubUrl: "https://github.com/kevintanes/sales-management-system",
+      },
+    ],
+  },
   navLinks: [
     { label: "01 / Bio", href: "#bio" },
     { label: "02 / Stack", href: "#stack" },
-    { label: "03 / Work", href: "#work" },
-    { label: "04 / Contact", href: "#contact" },
+    { label: "03 / Projects", href: "#projects" },
+    { label: "04 / Work", href: "#work" },
+    { label: "05 / Contact", href: "#contact" },
   ],
   socialLinks: [
     { label: "GitHub", href: "#" },
