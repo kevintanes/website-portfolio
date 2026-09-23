@@ -19,6 +19,20 @@ export const siteConfig = {
       "Outside of client work, I keep building side projects like BookEase to stay sharp on the latest tooling: Prisma, TanStack Query, shadcn/ui, and modern App Router patterns.",
     ],
   },
+  stack: {
+    label: "02 / STACK",
+    heading: "Technologies & Tools",
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Tailwind CSS",
+      "Prisma",
+      "TanStack Query",
+      "shadcn/ui",
+    ],
+  },
   navLinks: [
     { label: "01 / Bio", href: "#bio" },
     { label: "02 / Stack", href: "#stack" },

@@ -1,12 +1,13 @@
 import { Bio } from "@/components/sections/bio";
 import { Hero } from "@/components/sections/hero";
+import { Stack } from "@/components/sections/stack";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Bio />
-      <div id="stack" />
+      <Stack />
       <div id="work" />
       <div id="contact" />
     </>
