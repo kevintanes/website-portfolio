@@ -10,7 +10,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-import { SectionHeading } from "@/components/sections/section-heading";
+import { SectionHeading } from "@/components/section-heading";
 import { Badge } from "@/components/ui/badge";
 import { siteConfig } from "@/lib/site-config";
 

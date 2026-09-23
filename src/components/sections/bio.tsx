@@ -1,4 +1,4 @@
-import { SectionHeading } from "@/components/sections/section-heading";
+import { SectionHeading } from "@/components/section-heading";
 import { siteConfig } from "@/lib/site-config";
 
 export function Bio() {
