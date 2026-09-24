@@ -107,7 +107,7 @@ export const siteConfig = {
   ],
   socialLinks: [
     { label: "GitHub", href: "https://github.com/kevintanes" },
-    { label: "LinkedIn", href: "#" }, // TODO: isi URL LinkedIn asli
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/kevintanes/" },
   ],
   builtWith: "Built with Next.js & Tailwind",
 } as const;
