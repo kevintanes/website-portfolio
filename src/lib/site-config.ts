@@ -93,6 +93,11 @@ export const siteConfig = {
       },
     ],
   },
+  contact: {
+    label: "05 / CONTACT",
+    heading: "Say Hello",
+    body: "I'm always open to new opportunities, freelance work, or just a good conversation about building software. Feel free to reach out",
+  },
   navLinks: [
     { label: "01 / Bio", href: "#bio" },
     { label: "02 / Stack", href: "#stack" },
@@ -101,10 +106,8 @@ export const siteConfig = {
     { label: "05 / Contact", href: "#contact" },
   ],
   socialLinks: [
-    { label: "GitHub", href: "#" },
-    { label: "LinkedIn", href: "#" },
-    { label: "Twitter", href: "#" },
-    { label: "Read.cv", href: "#" },
+    { label: "GitHub", href: "https://github.com/kevintanes" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/kevintanes/" },
   ],
   builtWith: "Built with Next.js & Tailwind",
 } as const;

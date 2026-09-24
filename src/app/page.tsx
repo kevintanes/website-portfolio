@@ -1,4 +1,5 @@
 import { Bio } from "@/components/sections/bio";
+import { Contact } from "@/components/sections/contact";
 import { Experience } from "@/components/sections/experience";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
@@ -12,7 +13,7 @@ export default function Home() {
       <Stack />
       <Projects />
       <Experience />
-      <div id="contact" />
+      <Contact />
     </>
   );
 }
