@@ -66,6 +66,33 @@ export const siteConfig = {
       },
     ],
   },
+  experience: {
+    label: "04 / TIMELINE",
+    heading: "Work Experience",
+    items: [
+      {
+        period: "AUG 2025 — SEP 2026",
+        role: "Quality Assurance Engineer",
+        company: "Pegatron",
+        description:
+          "Supported production quality checks and cross-functional coordination with engineering and production teams to ensure on-time, defect-free product shipment.",
+      },
+      {
+        period: "MAR 2025 — JUN 2025",
+        role: "Frontend Developer",
+        company: "PT Cheil Worldwide Indonesia",
+        description:
+          "Led development of a new marketing website using Vite, React, TypeScript, and shadcn/ui, reducing initial load time by 35%. Decoupled a monolithic backend/frontend for independent deployment.",
+      },
+      {
+        period: "AUG 2023 — AUG 2024",
+        role: "Fullstack Web Developer",
+        company: "PT. Purwadhika Kirana Nusantara",
+        description:
+          "Led development of the Purwadhika Main Website and a multi-platform Learning Management System, building responsive interfaces with React, Next.js, and TanStack Query on an Express/Sequelize/Strapi backend.",
+      },
+    ],
+  },
   navLinks: [
     { label: "01 / Bio", href: "#bio" },
     { label: "02 / Stack", href: "#stack" },
