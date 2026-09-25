@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "title": "Kevin Tanes — Full-Stack Web Developer",
+    "description": "Portfolio of Kevin Tanes, a full-stack web developer building reliable software and clean, accessible interfaces."
+  },
+  "nav": {
+    "bio": "01 / Bio",
+    "stack": "02 / Stack",
+    "projects": "03 / Projects",
+    "work": "04 / Work",
+    "contact": "05 / Contact",
+    "cta": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "language": {
+    "switchTo": "Switch language to {language}",
+    "en": "English",
+    "id": "Bahasa Indonesia"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "hero": {
+    "role": "Software Engineer",
+    "title": "Full-Stack Web Developer",
+    "tagline": "I build reliable software and clean, accessible interfaces that people actually enjoy using.",
+    "photoAlt": "Portrait of Kevin Tanes",
+    "downloadCv": "Download CV",
+    "viewGithub": "View Github"
+  },
+  "bio": {
+    "label": "01 / BIO",
+    "heading": "The Philosophy",
+    "body": {
+      "p1": "Full-stack web developer with hands-on experience across React, Next.js, Node.js, and TypeScript. I've led frontend architecture for a production marketing site — cutting load time by 35% — and built a multi-platform Learning Management System end-to-end, from data models to deployed UI.",
+      "p2": "Outside of client work, I keep building side projects like BookEase to stay sharp on the latest tooling: Prisma, TanStack Query, shadcn/ui, and modern App Router patterns."
+    }
+  },
+  "stack": {
+    "label": "02 / STACK",
+    "heading": "Technologies & Tools"
+  },
+  "projects": {
+    "label": "03 / CASE STUDIES",
+    "heading": "Featured Projects",
+    "comingSoon": "More coming soon",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{title} preview",
+    "items": {
+      "bookease": {
+        "title": "BookEase",
+        "description": "Full-stack service booking platform — end-to-end booking flow with slot selection, booking summary, and Xendit payment integration."
+      },
+      "sales-management": {
+        "title": "Sales Management System",
+        "description": "Sales management dashboard with custom JWT auth and Server/Client Component architecture per Next.js App Router."
+      }
+    }
+  },
+  "experience": {
+    "label": "04 / TIMELINE",
+    "heading": "Work Experience",
+    "at": "at",
+    "items": {
+      "pegatron": {
+        "role": "Quality Assurance Engineer",
+        "description": "Supported production quality checks and cross-functional coordination with engineering and production teams to ensure on-time, defect-free product shipment."
+      },
+      "cheil": {
+        "role": "Frontend Developer",
+        "description": "Led development of a new marketing website using Vite, React, TypeScript, and shadcn/ui, reducing initial load time by 35%. Decoupled a monolithic backend/frontend for independent deployment."
+      },
+      "purwadhika": {
+        "role": "Fullstack Web Developer",
+        "description": "Led development of the Purwadhika Main Website and a multi-platform Learning Management System, building responsive interfaces with React, Next.js, and TanStack Query on an Express/Sequelize/Strapi backend."
+      }
+    }
+  },
+  "contact": {
+    "label": "05 / CONTACT",
+    "heading": "Say Hello",
+    "body": "I'm always open to new opportunities, freelance work, or just a good conversation about building software. Feel free to reach out"
+  },
+  "footer": {
+    "copyright": "© {year} {name}. All rights reserved.",
+    "builtWith": "Built with Next.js & Tailwind"
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import type { IconType } from "react-icons";
 import {
   SiNextdotjs,
@@ -26,13 +27,12 @@ const iconMap: Record<string, IconType> = {
 };
 
 export function Stack() {
+  const t = useTranslations("stack");
+
   return (
     <section id="stack" className="border-border border-b">
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 lg:grid-cols-3 lg:gap-16 lg:py-24">
-        <SectionHeading
-          label={siteConfig.stack.label}
-          title={siteConfig.stack.heading}
-        />
+        <SectionHeading label={t("label")} title={t("heading")} />
 
         <div className="flex flex-wrap gap-3 lg:col-span-2">
           {siteConfig.stack.items.map((item) => {
