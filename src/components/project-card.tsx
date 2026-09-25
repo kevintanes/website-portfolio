@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -12,12 +13,15 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const t = useTranslations("projects");
+  const title = t(`items.${project.id}.title`);
+
   return (
     <div className="bg-card border-border flex flex-col overflow-hidden rounded-lg border shadow-md transition-all duration-200 hover:-translate-y-2 hover:shadow-xl">
       <div className="relative h-50 w-full">
         <Image
           src={project.image}
-          alt={`${project.title} preview`}
+          alt={t("imageAlt", { title })}
           fill
           sizes="(min-width: 1024px) 33vw, 100vw"
           className="object-cover"
@@ -26,11 +30,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="flex flex-1 flex-col gap-5 p-6">
         <div className="flex flex-1 flex-col gap-2">
-          <h3 className="text-card-foreground text-xl font-bold">
-            {project.title}
-          </h3>
+          <h3 className="text-card-foreground text-xl font-bold">{title}</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            {project.description}
+            {t(`items.${project.id}.description`)}
           </p>
         </div>
 
@@ -54,7 +56,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               className={buttonVariants({ variant: "brand", size: "sm" })}
             >
-              Live
+              {t("live")}
             </Link>
           )}
           {project.githubUrl && (
@@ -64,7 +66,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               className={buttonVariants({ variant: "outline", size: "sm" })}
             >
-              GitHub
+              {t("github")}
             </Link>
           )}
         </div>

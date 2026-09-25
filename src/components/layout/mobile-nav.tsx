@@ -2,21 +2,24 @@
 
 import * as React from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 
 import { Button, buttonVariants } from "@/components/ui/button";
+import { LanguageToggle } from "@/components/language-toggle";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/lib/site-config";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
+  const t = useTranslations("nav");
 
   return (
     <div className="md:hidden">
       <Button
         variant="outline"
         size="icon"
-        aria-label={open ? "Close menu" : "Open menu"}
+        aria-label={open ? t("closeMenu") : t("openMenu")}
         aria-expanded={open}
         onClick={() => setOpen((prev) => !prev)}
       >
@@ -33,18 +36,19 @@ export function MobileNav() {
                 onClick={() => setOpen(false)}
                 className="text-muted-foreground hover:text-foreground"
               >
-                {link.label}
+                {t(link.id)}
               </Link>
             ))}
           </nav>
           <div className="mt-4 flex items-center gap-3">
+            <LanguageToggle />
             <ThemeToggle />
             <Link
               href={siteConfig.navLinks.at(-1)!.href}
               onClick={() => setOpen(false)}
               className={buttonVariants({ variant: "default" })}
             >
-              Contact
+              {t("cta")}
             </Link>
           </div>
         </div>

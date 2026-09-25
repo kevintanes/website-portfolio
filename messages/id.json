@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "title": "Kevin Tanes — Full-Stack Web Developer",
+    "description": "Portofolio Kevin Tanes, seorang full-stack web developer yang membangun software yang andal dan antarmuka yang bersih serta mudah diakses."
+  },
+  "nav": {
+    "bio": "01 / Bio",
+    "stack": "02 / Stack",
+    "projects": "03 / Proyek",
+    "work": "04 / Pengalaman",
+    "contact": "05 / Kontak",
+    "cta": "Kontak",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
+  },
+  "language": {
+    "switchTo": "Ganti bahasa ke {language}",
+    "en": "English",
+    "id": "Bahasa Indonesia"
+  },
+  "theme": {
+    "toggle": "Ganti tema"
+  },
+  "hero": {
+    "role": "Software Engineer",
+    "title": "Full-Stack Web Developer",
+    "tagline": "Saya membangun software yang andal dan antarmuka yang bersih serta mudah diakses, yang benar-benar nyaman digunakan orang.",
+    "photoAlt": "Potret Kevin Tanes",
+    "downloadCv": "Unduh CV",
+    "viewGithub": "Lihat Github"
+  },
+  "bio": {
+    "label": "01 / BIO",
+    "heading": "Filosofi",
+    "body": {
+      "p1": "Full-stack web developer dengan pengalaman langsung di React, Next.js, Node.js, dan TypeScript. Saya pernah memimpin arsitektur frontend untuk sebuah marketing site produksi — memangkas waktu load sebesar 35% — dan membangun Learning Management System multi-platform dari nol, mulai dari data model hingga UI yang di-deploy.",
+      "p2": "Di luar pekerjaan klien, saya terus mengerjakan side project seperti BookEase untuk tetap update dengan tooling terbaru: Prisma, TanStack Query, shadcn/ui, dan pola App Router modern."
+    }
+  },
+  "stack": {
+    "label": "02 / STACK",
+    "heading": "Teknologi & Tools"
+  },
+  "projects": {
+    "label": "03 / STUDI KASUS",
+    "heading": "Proyek Unggulan",
+    "comingSoon": "Segera hadir",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "Pratinjau {title}",
+    "items": {
+      "bookease": {
+        "title": "BookEase",
+        "description": "Platform pemesanan layanan full-stack — alur booking end-to-end dengan pemilihan slot, ringkasan booking, dan integrasi pembayaran Xendit."
+      },
+      "sales-management": {
+        "title": "Sales Management System",
+        "description": "Dashboard manajemen penjualan dengan autentikasi JWT kustom serta arsitektur Server/Client Component sesuai Next.js App Router."
+      }
+    }
+  },
+  "experience": {
+    "label": "04 / LINI WAKTU",
+    "heading": "Pengalaman Kerja",
+    "at": "di",
+    "items": {
+      "pegatron": {
+        "role": "Quality Assurance Engineer",
+        "description": "Mendukung pengecekan kualitas produksi dan koordinasi lintas fungsi dengan tim engineering dan produksi untuk memastikan pengiriman produk tepat waktu dan bebas cacat."
+      },
+      "cheil": {
+        "role": "Frontend Developer",
+        "description": "Memimpin pengembangan marketing website baru menggunakan Vite, React, TypeScript, dan shadcn/ui, mengurangi waktu load awal sebesar 35%. Memisahkan backend/frontend yang monolitik agar dapat di-deploy secara independen."
+      },
+      "purwadhika": {
+        "role": "Fullstack Web Developer",
+        "description": "Memimpin pengembangan Website Utama Purwadhika dan Learning Management System multi-platform, membangun antarmuka responsif dengan React, Next.js, dan TanStack Query di atas backend Express/Sequelize/Strapi."
+      }
+    }
+  },
+  "contact": {
+    "label": "05 / KONTAK",
+    "heading": "Say Hello",
+    "body": "Saya selalu terbuka untuk peluang baru, pekerjaan freelance, atau sekadar mengobrol seputar pengembangan software. Jangan ragu untuk menghubungi"
+  },
+  "footer": {
+    "copyright": "© {year} {name}. Hak cipta dilindungi.",
+    "builtWith": "Dibangun dengan Next.js & Tailwind"
+  }
+}

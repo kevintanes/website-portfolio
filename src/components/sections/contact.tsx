@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import { SectionHeading } from "@/components/section-heading";
 import { buttonVariants } from "@/components/ui/button";
@@ -6,17 +7,16 @@ import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 export function Contact() {
+  const t = useTranslations("contact");
+
   return (
     <section id="contact">
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 lg:grid-cols-3 lg:gap-16 lg:py-24">
-        <SectionHeading
-          label={siteConfig.contact.label}
-          title={siteConfig.contact.heading}
-        />
+        <SectionHeading label={t("label")} title={t("heading")} />
 
         <div className="flex flex-col gap-8 lg:col-span-2">
           <p className="text-muted-foreground text-lg leading-relaxed sm:text-xl">
-            {siteConfig.contact.body}
+            {t("body")}
           </p>
 
           <div className="flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:items-center">
